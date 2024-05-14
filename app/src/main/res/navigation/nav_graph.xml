@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/animalDetailsFragment2"
+        android:name="com.example.animalkingdom.ui.animaldetails.AnimalDetailsFragment"
+        android:label="@string/animal_details"
+        tools:layout="@layout/fragment_animal_details2" >
+        <action
+            android:id="@+id/action_animalDetailsFragment2_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/speciesDetailsFragment2"
+        android:name="com.example.animalkingdom.ui.speciesdetails.SpeciesDetailsFragment"
+        android:label="@string/species_details"
+        tools:layout="@layout/fragment_species_details2" >
+        <action
+            android:id="@+id/action_speciesDetailsFragment2_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.animalkingdom.ui.DashboardFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_animalDetailsFragment2"
+            app:destination="@id/animalDetailsFragment2"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_speciesDetailsFragment2"
+            app:destination="@id/speciesDetailsFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>

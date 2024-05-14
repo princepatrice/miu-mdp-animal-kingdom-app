@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="Home"
+    tools:context=".ui.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/animalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/animal_details"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="76dp"
+                tools:layout_editor_absoluteY="150dp"
+
+
+                />
+
+            <Button
+                android:id="@+id/speciesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/species_details"
+                tools:layout_editor_absoluteX="76dp"
+                tools:layout_editor_absoluteY="72dp"
+               />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

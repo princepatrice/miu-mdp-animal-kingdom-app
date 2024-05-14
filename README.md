@@ -1,5 +1,11 @@
 
-Animal KingDom
+Animal KingDom Application
+
+
+------------------------------- Technology-------------------------------------------
+Room Database : For Data Storage
+LiveData : To simulate Real time
+Repository and ViewModel (implement CRUD operation using coroutines)
 
 Home page
 ![alt text](screenshots/home.png)
